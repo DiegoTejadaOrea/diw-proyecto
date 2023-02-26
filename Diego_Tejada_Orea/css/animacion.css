@@ -1,0 +1,129 @@
+html {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* ===== MARGEN IZQUIERDO ===== */
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.fondo1 {
+    width: 60%;
+    height: 100vh;
+    background: rgb(205, 21, 21);
+    position: relative;
+    float: left;
+    z-index: 1;
+    animation: mymove 10s forwards;
+    display: block;
+}
+
+
+/* ===== PARTE MEDIA ===== */
+.medio {
+    width: 4%;
+    height: 100vh;
+    background: rgb(35, 35, 35);
+    position: absolute;
+    margin-left: 58%;
+    z-index: 2;
+    animation: mymove 10s forwards;
+    display: block;
+}
+
+.circulo {
+    width: 11%;
+    height: 22%;
+    border: rgb(35, 35, 35) 15px solid;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 54%;
+    margin-top: 18%;
+    z-index: 3;
+    animation: mymove 10s forwards;
+    display: block;
+}
+
+.circulo2 {
+    width: 62%;
+    height: 65%;
+    background: rgb(21, 21, 21);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 19%;
+}
+
+/* ===== MARGEN DERECHO ===== */
+.fondo2 {
+    width: 40%;
+    height: 100vh;
+    background: rgb(218, 218, 218);
+    position: relative;
+    float: right;
+    z-index: 1;
+    animation: mymove2 10s forwards;
+    display: block;
+}
+
+
+/* ===== ANIMACIONES ===== */
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -1030px;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@keyframes mymove2 {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 620px;
+        visibility: hidden;
+    }
+}
+
+.inicio {
+    background-image: url(/Diego_Tejada_Orea/imagenes/screen.gif) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    transform: scale(2.8);
+}
+
+/*audio que se reproduce en el inicio*/
+.sonido {
+    display: none;
+}
+
+.start {
+    position: relative;
+    display: block;
+    /*alinar la imagen en el medio de la pantalla*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 6%;
+    height: 6%;
+    margin-top: 29.5%;
+}
+
+.start:hover {
+    opacity: 0.9;
+    filter: brightness(0.3);
+}

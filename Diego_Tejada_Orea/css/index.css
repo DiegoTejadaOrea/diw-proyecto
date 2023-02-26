@@ -1,0 +1,1005 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* ============= ENCABEZADO ============= */
+#logo {
+    width: 20px;
+    height: 20px;
+}
+
+/* ============= MENU dropdown ============= */
+
+/* .navbar1 {
+    overflow: hidden;
+    background-color: #333;
+    display: block;
+    position: absolute;
+}
+
+.navbar1 a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown1 {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar1 a:hover,
+.dropdown1:hover .dropbtn1 {
+    background-color: rgb(113, 101, 101);
+}
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown1-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown1-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+} */
+
+.active {
+    background-color: #ffffff;
+    border: #333 1px solid;
+}
+
+/* ============= fin menu ============= */
+
+/* .imagenTitulo {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+} */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    /*borde del texto negro*/
+    -webkit-text-stroke: 2px black;
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .imagenTitulo {
+        position: relative;
+        width: 50rem;
+        height: 20rem;
+    }
+}
+
+
+/* ============= CUERPO ============= */
+
+.tituloRegion {
+    color: yellow;
+    font-size: 4rem;
+    -webkit-text-stroke: 2px blue;
+    margin-top: 1rem;
+    margin-left: 49rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+}
+
+.mapaRegiones {
+    position: relative;
+    margin-top: -6rem;
+    margin-left: -5rem;
+    border: 10px solid black;
+    transform: scale(0.75) !important;
+}
+
+.cotenedorMap {
+    background-image: url(/Diego_Tejada_Orea/imagenes/fondo1.png);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    width: 100%;
+}
+
+.mapaImagen {
+    margin-left: 1rem;
+}
+
+.cartel {
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 40rem;
+    width: 20rem;
+    height: 10rem;
+}
+
+/* @media screen and (max-width: 1024px) {
+    .cartel {
+        position: absolute;
+        margin-left: -4.9rem;
+        margin-top: -24rem;
+    }
+
+    .mapaImagen {
+        margin-top: 30rem;
+        margin-left: 5rem;
+    }
+
+    .tituloRegion {
+        margin-top: 1rem;
+        margin-left: 8.3rem;
+    }
+
+    .inridia:hover::after {
+        display: none;
+    }
+
+    .inridia::after {
+        width: 100%;
+        height: 5rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: visible;
+        content: "¡Bienvenido a la región de Inridia!";
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        margin-left: 5rem;
+    }
+} */
+
+.pokemonMapa {
+    transform: scale(0.9) !important;
+    position: absolute;
+}
+
+.textoCartel {
+    color: #000000;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-align: center;
+    z-index: 100;
+}
+
+
+
+/* ----===== seccion de imagenes =====----*/
+.inridia {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.inridia:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de inridia!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.orre {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.orre:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de orre!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.arion {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.arion:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de arion!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.icolena {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.icolena:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de icolena!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.nev-kalos {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.nev-kalos:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de nev-kalos!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.alma {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.alma:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de alma!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.undya {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.undya:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de undya!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.fiore {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.fiore:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de fiore!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.sinnoh {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.sinnoh:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de sinnoh!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.sev-islands {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.sev-islands:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de sev-islands!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.dmas {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.dmas:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de dmas!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.dblyian {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.dblyian:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de dblyian!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.gema {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.gema:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de gema!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.iro {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.iro:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de iro!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.orange-islands {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.orange-islands:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de orange-islands!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.hoenn {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.hoenn:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de hoenn!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.kanto {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.kanto:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de kanto!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.johto {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.johto:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de johto!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.avisol {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.avisol:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de avisol!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.kalos {
+    visibility: hidden;
+    color: rgb(0, 0, 0);
+}
+
+.kalos:hover::after {
+    width: 40rem;
+    height: 5rem;
+    position: absolute;
+    margin-top: -31rem;
+    margin-left: 45rem;
+    visibility: visible;
+    content: "¡Bienvenido a la region de kalos!";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+
+/*----===== sprite =====----*/
+.sprite {
+    background-image: url(/Diego_Tejada_Orea/imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.content p {
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 80%;
+    margin: 0;
+}
+
+.titulo2 {
+    color: yellow;
+    font-size: 4rem;
+    font-style: bold;
+    -webkit-text-stroke: 2px blue;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#blobs {
+    width: 800px;
+    height: 450px;
+    background: url(/Diego_Tejada_Orea/imagenes/img_css/spritePokemon1.jpg);
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    border: 5px solid #000;
+}
+
+#blobs li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    position: absolute;
+}
+
+#blobs a {
+    display: block;
+}
+
+#blob1 {
+    left: 0;
+    top: 0;
+    width: 800px;
+    height: 450px;
+}
+
+#blob1 a {
+    display: block;
+    width: 778px;
+    height: 440px;
+    margin: 0 0 0 0;
+}
+
+#blob1 a:hover {
+    background: url(/Diego_Tejada_Orea/imagenes/img_css/spritePokemon1.jpg) 0 -450px no-repeat;
+}
+
+
+
+/* ============= ANIMACION ============= */
+
+.animacionDiv {
+    background-image: url(/Diego_Tejada_Orea/imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
+    width: 100%;
+}
+
+.combate {
+    border: 6px solid black;
+    width: 40rem;
+    height: 40rem;
+    background: linear-gradient(rgb(136, 209, 238), rgb(50, 120, 240), rgb(32, 82, 153), rgb(121, 74, 182));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.texto {
+    background-color: rgb(248, 247, 241);
+    border: #333 3px solid;
+    border-radius: 10px;
+    width: 15rem;
+    height: 3.5rem;
+    position: absolute;
+    margin-top: -30rem;
+    margin-left: -24.5rem;
+}
+
+.txtPokemon {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.nivel {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 9rem;
+    margin-top: -2.9rem;
+    position: absolute;
+}
+
+.masculino {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 7rem;
+    margin-top: -2.8rem;
+    position: absolute;
+    color: blue;
+}
+
+/* Poké Styles */
+.pokeball {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset -5px 5px 0 5px #ffffff;
+    animation: fall .25s ease-in-out,
+        shake 1.25s cubic-bezier(.36, .07, .19, .97) 3;
+    margin-top: -1.2rem;
+    margin-left: 0.5rem;
+}
+
+.pokeball::before,
+.pokeball::after {
+    content: "";
+    position: absolute;
+}
+
+.pokeball::before {
+    background: red;
+    width: 100%;
+    height: 50%;
+}
+
+.pokeball::after {
+    top: calc(50% - 2px);
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.pokeball__button {
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 2px);
+    width: 2px;
+    height: 2px;
+    background: #7f8c8d;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 0 2px black;
+    animation: blink .5s alternate 7;
+}
+
+.vida {
+    background-color: greenyellow;
+    border: #333 2px solid;
+    position: absolute;
+    width: 8rem;
+    height: 0.7rem;
+    margin-top: -1rem;
+    margin-left: 6rem;
+}
+
+.ps {
+    background-color: #333;
+    border: #333 2px solid;
+    position: absolute;
+    width: 2rem;
+    height: 0.7rem;
+    margin-top: -1rem;
+    margin-left: 4rem;
+}
+
+.psTexto {
+    color: red;
+    position: absolute;
+    margin-top: -1.2rem;
+    margin-left: 4.7rem;
+    font-size: 0.8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/*campo pokemon salvaje*/
+.campo {
+    background-color: rgb(14, 155, 14);
+    border: #e2b146 10px solid;
+    border-radius: 70%;
+    width: 22rem;
+    height: 6rem;
+    position: absolute;
+    margin-top: -8rem;
+    margin-left: 16rem;
+}
+
+#marco {
+    /* border: 3px solid #333; */
+    width: 27rem;
+    height: 18rem;
+    margin-top: -24rem;
+    margin-left: 11rem;
+    background: url(/Diego_Tejada_Orea/imagenes/animacionLugia.png) 0px 0px;
+    z-index: 20;
+}
+
+/* === ANIMACION POKEMON === */
+
+@keyframes movimiento {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: -4483px -0;
+    }
+
+}
+
+#mov~#marco {
+    width: 600px;
+    height: 300px;
+    animation: movimiento 0.750s steps(10, end) infinite;
+}
+
+.boton {
+    visibility: hidden;
+}
+
+/* === FIN ANIMACION POKEMON === */
+
+.campo2 {
+    background-color: rgb(14, 155, 14);
+    border: #e2b146 10px solid;
+    border-radius: 70%;
+    width: 25rem;
+    height: 7rem;
+    position: absolute;
+    margin-top: 27rem;
+    margin-left: -19.7rem;
+    clip: rect(0px 700px 190px 43px);
+}
+
+.entrenador {
+    position: absolute;
+    margin-top: 13.3rem;
+    margin-left: -19rem;
+    z-index: 5;
+}
+
+/*pokemon salvaje texto*/
+.pokSalvaje {
+    background-color: rgb(248, 247, 241);
+    border: #333 3px solid;
+    border-radius: 10px;
+    width: 39.5rem;
+    height: 6rem;
+    position: absolute;
+    margin-top: 34rem;
+    border-left: 10px solid gray;
+    border-right: 10px solid gray;
+}
+
+.salvaje {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    z-index: 10;
+}
+
+/* [----===== BOOTSRAP FONDOS =====----] */
+
+.fondobst {
+    background-image: url(/Diego_Tejada_Orea/imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+tbody {
+    background-color: rgb(248, 247, 241);
+}
+
+
+/* ============= PIE DE PAGINA ============= */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(26, 25, 24);
+    color: white;
+    left: 0;
+    bottom: 0;
+}

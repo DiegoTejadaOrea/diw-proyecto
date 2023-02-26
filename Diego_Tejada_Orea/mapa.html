@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/Diego_Tejada_Orea/css/index.css">
+    <link rel="stylesheet"
+        href="/Diego_Tejada_Orea/boostrap/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <script src="/Diego_Tejada_Orea/boostrap/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+
+    </script>
+
+</head>
+
+<body>
+    <!-- ========= ENCABEZADO ========= -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="/Diego_Tejada_Orea/imagenes/logo.png" height="60" width="60" title="Página principal"
+                        class="img-responsive" draggable="false" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!-- <a href="index.html" class="nav-item nav-link">Página principal</a> -->
+                        <!-- ====== APARTADO CSS ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CSS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/mapa.html">Regiones</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/sprites.html">Whos that
+                                        pokemon!?</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/animacion.html">Combate</a></li>
+                            </ul>
+                        </li>
+                        <!-- ====== APARTADO bootstrap ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BOOTSTRAP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/tablas.html">Tabla de
+                                        tipos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/Diego_Tejada_Orea/boostrap/pokeballs.html">Pokeballs</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/lideres.html">Team
+                                        Rocket</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/galeria.html">Juegos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ====== APARTADO framework ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BOOTSTRAP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/tablas.html">Tabla de
+                                        tipos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/Diego_Tejada_Orea/boostrap/pokeballs.html">Pokeballs</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/lideres.html">Team
+                                        Rocket</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/galeria.html">Juegos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- <div>
+        <div class="text-center bg-warning">
+            <img src="/Diego_Tejada_Orea/imagenes/tituloPokemon2.png" alt="titulo" class="imagenTitulo">
+        </div>
+    </div> -->
+    <!-- ========= CONTENIDO ========= -->
+    <!----- mapa imagenes ----->
+    <div class="cotenedorMap" id="map-section">
+        <br>
+        <br>
+        <h3 class="tituloRegion">Regiones de pokémon</h3>
+        <div class="mapaImagen">
+            <div class="cartel">
+                <img src="imagenes/cartel.png" alt="cartel" class="pokemonMapa">
+            </div>
+            <img src="imagenes/mapa.jpg" usemap="#image-map" class="mapaRegiones">
+            <map name="image-map">
+                <area target="" alt="inridia" class="inridia" href="" coords="266,139,2,1" shape="rect">
+                <area target="" alt="orre" class="orre" href="" coords="492,139,267,2" shape="rect">
+                <area target="" alt="arion" class="arion" href="" coords="669,154,494,0" shape="rect">
+                <area target="" alt="icolena" class="icolena" href="" coords="819,153,669,0" shape="rect">
+                <area target="" alt="nev kalos" class="nev-kalos" href="" coords="819,362,703,153" shape="rect">
+                <area target="" alt="alma" class="alma" href="" coords="494,156,703,311" shape="0">
+                <area target="" alt="undya" class="undya" href="" coords="817,500,603,364" shape="0">
+                <area target="" alt="fiore" class="fiore" href="" coords="705,656,494,499" shape="0">
+                <area target="" alt="sinnoh" class="sinnoh" href="" coords="328,773,72,533" shape="0">
+                <area target="" alt="sev-islands" class="sev islands" href="" coords="72,773,2,377" shape="0">
+                <area target="" alt="dmas" class="dmas" href="" coords="212,531,212,393,188,391,188,268,71,271,71,534"
+                    shape="poly">
+                <area target="" alt="dblyian" class="dblyian" href="" coords="220,270,220,139,2,139,0,373,71,376,69,270"
+                    shape="poly">
+                <area target="" alt="gema" class="gema" href="" coords="492,771,491,391,431,391,432,536,328,533,329,773"
+                    shape="poly">
+                <area target="" alt="iro" class="iro" href="" coords="600,498,602,364,703,363,703,310,496,309,496,500"
+                    shape="poly">
+                <area target="" alt="orange-islands" class="orange-islands" href=""
+                    coords="819,500,706,499,706,656,494,654,492,771,817,773" shape="poly">
+                <area target="" alt="hoenn" class="hoenn" href="" coords="216,394,432,533,432,320,469,336,452,367"
+                    shape="0">
+                <area target="" alt="kanto" class="kanto" href="" coords="339,271,494,391" shape="0">
+                <area target="" alt="jhoto" class="jhoto" href="" coords="185,268,340,394" shape="0">
+                <area target="" alt="avisol" class="avisol" href="" coords="409,142,492,271" shape="0">
+                <area target="" alt="kalos" class="kalos" href="" coords="222,139,408,270" shape="0">
+            </map>
+        </div>
+    </div>
+    <!-- ========= FOOTER ========= -->
+    <footer>
+        <p>Diego Tejada Orea<br>
+            <a>CSS</a>
+        </p>
+    </footer>
+</body>
+
+</html>

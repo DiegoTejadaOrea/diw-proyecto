@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/Diego_Tejada_Orea/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+    <link rel="stylesheet"
+        href="/Diego_Tejada_Orea/boostrap/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="/Diego_Tejada_Orea/boostrap/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
+
+    </script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- ======== NAVBAR ======== -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="/Diego_Tejada_Orea/index.html" class="navbar-brand">
+                    <img src="/Diego_Tejada_Orea/imagenes/logo.png" height="60" width="60" title="Página principal"
+                        class="img-responsive" draggable="false" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!-- <a href="index.html" class="nav-item nav-link">Página principal</a> -->
+                        <!-- ====== APARTADO CSS ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CSS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/mapa.html">Regiones</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/sprites.html">Whos that
+                                        pokemon!?</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/animacion.html">Combate</a></li>
+                            </ul>
+                        </li>
+                        <!-- ====== APARTADO bootstrap ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BOOTSTRAP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/tablas.html">Tabla de
+                                        tipos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/Diego_Tejada_Orea/boostrap/pokeballs.html">Pokeballs</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/lideres.html">Team
+                                        Rocket</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/galeria.html">Juegos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ====== APARTADO framework ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                TAILWIND
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/tienda.html">Tienda</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/blog.html">Blog</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ======== BANNER ENCABEZADO ======== -->
+    <div class="bg-cover bg-center h-64"
+        style="background-image: url('/Diego_Tejada_Orea/imagenes/img_tailwind/banner.jpg')">
+    </div>
+    <!-- ======== INTRODUCCION ======== -->
+    <section class="fondobst">
+        <div class="bg-gray-100 py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Bienvenidos a la tienda POKEMON
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        En este sitio encontrarás todos los productos para completar tu colección... o empezarla.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark text-white text-center">
+            <br>
+        </div>
+        <!-- ======== PRODUCTOS ======== -->
+        <div class="container mx-auto py-4">
+            <h1 class="text-5xl font-bold mb-4 text-center">Las cartas más valiosas</h1>
+
+            <!-- ===== primer bloque de productos ===== -->
+            <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                <!-- ==== CARTA 1 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/pikachu.jpg"
+                        alt="Pikachu Ilustrador (promoción CoroCoro)" class="w-full h-48 object-cover hover:scale-110 ">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Pikachu Ilustrador</h2>
+                        <p class="text-gray-700">(promoción CoroCoro)</p>
+                        <p class="text-gray-900 font-bold mt-2">123.500€</p>
+                    </div>
+                </div>
+
+                <!-- ==== CARTA 2 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/blastoise.jpg"
+                        alt="Blastoise de primera edición (versión holográfica Galaxy Star)"
+                        class="w-full h-48 object-cover hover:scale-110">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Blastoise de primera edición
+                        </h2>
+                        <p class="text-gray-700">(versión holográfica Galaxy Star)</p>
+                        <p class="text-gray-900 font-bold mt-2">296.000€</p>
+                    </div>
+                </div>
+
+                <!-- ==== CARTA 3 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/charizars.jpg"
+                        alt="Charizard de primera edición (versión holográfica)"
+                        class="w-full h-48 object-cover hover:scale-110">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Charizard de primera edición</h2>
+                        <p class="text-gray-700">(versión holográfica)</p>
+                        <p class="text-gray-900 font-bold mt-2">296.600€</p>
+                    </div>
+                </div>
+
+                <!-- ==== CARTA 4 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/kangaskhan.jpg"
+                        alt="Kangaskhan (promoción Parent/Child)" class="w-full h-48 object-cover hover:scale-110">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Kangaskhan </h2>
+                        <p class="text-gray-700">(promoción Parent/Child)</p>
+                        <p class="text-gray-900 font-bold mt-2">123.500€</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- ===== segundo bloque de productos ===== -->
+            <div class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+                <!-- ==== CARTA 1 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/pikachu.jpg"
+                        alt="Pikachu Ilustrador (promoción CoroCoro)" class="w-full h-48 object-cover hover:scale-110">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Pikachu Ilustrador</h2>
+                        <p class="text-gray-700">(promoción CoroCoro)</p>
+                        <p class="text-gray-900 font-bold mt-2">123.500€</p>
+                    </div>
+                </div>
+
+                <!-- ==== CARTA 2 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/blastoise.jpg"
+                        alt="Blastoise de primera edición (versión holográfica Galaxy Star)"
+                        class="w-full h-48 object-cover hover:scale-110">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Blastoise de primera edición
+                        </h2>
+                        <p class="text-gray-700">(versión holográfica Galaxy Star)</p>
+                        <p class="text-gray-900 font-bold mt-2">296.000€</p>
+                    </div>
+                </div>
+
+                <!-- ==== CARTA 3 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/charizars.jpg"
+                        alt="Charizard de primera edición (versión holográfica)"
+                        class="w-full h-48 object-cover hover:scale-110">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Charizard de primera edición</h2>
+                        <p class="text-gray-700">(versión holográfica)</p>
+                        <p class="text-gray-900 font-bold mt-2">296.600€</p>
+                    </div>
+                </div>
+
+                <!-- ==== CARTA 4 ==== -->
+                <div class="bg-white shadow rounded-lg overflow-hidden">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/productos/kangaskhan.jpg"
+                        alt="Kangaskhan (promoción Parent/Child)" class="w-full h-48 object-cover hover:scale-110">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Kangaskhan </h2>
+                        <p class="text-gray-700">(promoción Parent/Child)</p>
+                        <p class="text-gray-900 font-bold mt-2">123.500€</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- === FRANJA SEPARADORA === -->
+        <div class="bg-dark text-white text-center">
+            <br>
+            <div class="grid grid-cols-3">
+                <p>Cartas en venta</p>
+                <p>Facil y seguro</p>
+                <p>Siempre al mejor precio</p>
+            </div>
+            <br>
+        </div>
+        <br>
+        <!-- ===== MOSAICO EXPANSIONES ==== -->
+        <h1 class="text-4xl font-bold mb-4 text-center">Expansiones</h1>
+        <div class="flex container">
+            <!-- Expansion 1 -->
+            <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/cenitsupremo.jpg"
+                class="w-full mx-2 h-90 border object-cover hover:opacity-50" />
+            <!-- BLOQUE Expansion 2 y 3 -->
+            <div class="flex flex-col">
+                <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/tempestadplateada.jpg"
+                    class="w-full border hover:opacity-40" />
+                <br>
+                <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/pokemon-origen-perdido.jpg"
+                    class="w-full border hover:opacity-40" />
+            </div>
+        </div>
+        <br>
+    </section>
+    <!-- ======== FOOTER ======== -->
+    <footer>
+        <br>
+        <p>Diego Tejada Orea | Tailwind
+        </p>
+    </footer>
+
+</body>
+
+</html>
