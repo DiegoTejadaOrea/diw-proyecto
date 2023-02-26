@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <!-- Importamos Tailwind CSS desde CDN -->
+    <link rel="stylesheet" href="/Diego_Tejada_Orea/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
     <link rel="stylesheet"
         href="/Diego_Tejada_Orea/boostrap/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
@@ -31,7 +32,7 @@
                         <!-- <a href="index.html" class="nav-item nav-link">Página principal</a> -->
                         <!-- ====== APARTADO CSS ====== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 CSS
                             </a>
@@ -44,7 +45,7 @@
                         </li>
                         <!-- ====== APARTADO bootstrap ====== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 BOOTSTRAP
                             </a>
@@ -61,18 +62,14 @@
                         </li>
                         <!-- ====== APARTADO framework ====== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 TAILWIND
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/tienda.html">Tienda</a>
                                 </li>
-                                <li><a class="dropdown-item"
-                                        href="/Diego_Tejada_Orea/boostrap/pokeballs.html">Pokeballs</a></li>
-                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/lideres.html">Team
-                                        Rocket</a></li>
-                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/galeria.html">Juegos</a>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/blog.html">Pokeblog</a>
                                 </li>
                             </ul>
                         </li>
@@ -82,28 +79,140 @@
         </nav>
     </header>
     <!-- ======== BANNER ENCABEZADO ======== -->
-    <div class="bg-cover bg-center h-64"
-        style="background-image: url(/Diego_Tejada_Orea/imagenes/img_tailwind/banner.jpg)">
+    <!-- Text Header -->
+    <header class="w-full container mx-auto">
+        <div class="flex flex-col items-center py-12">
+            <p class="font-bold text-gray-800 uppercase text-5xl">
+                Pokeblog
+            </p>
+            <p class="text-lg text-gray-600">
+                Aqui encontraras todas las noticias de interes sobre el mundo pokemon
+            </p>
+        </div>
+    </header>
+
+    <!-- Topic Nav -->
+
+    <div
+        class="w-full mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2 bg-dark">
+        <a href="#pokemongo" class="rounded py-2 px-4 mx-2 text-white mt-1">Pokemon Go</a>
+        <a href="#escarlata" class="rounded py-2 px-4 mx-2 text-white">Pokemon escarlata</a>
+        <a href="#pikachu" class="rounded py-2 px-4 mx-2 text-white">Detective Pikachu 2</a>
     </div>
-    <!-- ======== INTRODUCCION ======== -->
-    <div class="carousel rounded-box">
-        <div class="carousel-item">z
-            <img src="/Diego_Tejada_Orea/imagenes/imgPokemon/blaziken.png" alt="Burger" />
-        </div>
-        <div class="carousel-item">
-            <img src="/Diego_Tejada_Orea/imagenes/imgPokemon/blastoise.png" alt="Burger" />
-        </div>
+
+    <div class="container mx-auto flex flex-wrap py-6 fondobst">
+
+        <!-- Posts Section -->
+        <section class="w-full md:w-2/3 flex flex-col items-center px-3">
+
+            <article class="flex flex-col shadow my-4" id="pokemongo">
+                <!-- Article Image -->
+                <a class="hover:opacity-75">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/pokemongo.jpg">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <p class="text-blue-700 text-sm font-bold uppercase pb-2">Pokemon go</p>
+                    <p class="text-3xl font-bold hover:text-gray-700 pb-2">Durante el Tour de Pokémon GO: Hoenn (Las
+                        Vegas), podréis capturar Pokémon que tengan cartas de lugar</p>
+                    <p class="pb-6">Durante el Tour de Pokémon GO: Hoenn (Las Vegas), tras capturar a ciertos Pokémon en
+                        incursiones presenciales de localizaciones concretas, los Entrenadores tendrán la oportunidad de
+                        conseguir una carta de lugar. Estos fondos de recuerdo aparecerán en la página del Pokémon y
+                        mostrarán dónde fue capturado.</p>
+                    <p class="uppercase text-gray-800 hover:text-black">Seguir leyendo... <i
+                            class="fas fa-arrow-right"></i></p>
+                </div>
+            </article>
+
+            <article class="flex flex-col shadow my-4" id="escarlata">
+                <!-- Article Image -->
+                <a class="hover:opacity-75">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/pokemon-escarlata-purpura.jpg">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <p class="text-blue-700 text-sm font-bold uppercase pb-2">Pokemon escarlata</p>
+                    <p class="text-3xl font-bold hover:text-gray-700 pb-2">¡La Pokédex ha superado por fin los mil
+                        Pokémon! ¡Vamos a celebrarlo con un vídeo muy especial!</p>
+                    <p class="pb-6">Veintiséis años después del lanzamiento de los primeros juegos de Pokémon en Japón
+                        —Pokémon Edición Roja y Pokémon Edición Verde— el número de Pokémon descubiertos ha superado por
+                        fin el millar. Hoy se ha publicado un vídeo en el canal oficial de YouTube de Pokémon para
+                        celebrarlo. ¡No te lo pierdas!</p>
+                    <p class="uppercase text-gray-800 hover:text-black">Seguir leyendo... <i
+                            class="fas fa-arrow-right"></i></p>
+                </div>
+            </article>
+
+            <article class="flex flex-col shadow my-4" id="pikachu">
+                <!-- Article Image -->
+                <a class="hover:opacity-75">
+                    <img src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/detective-pikachu.jpg">
+                </a>
+                <div class="bg-white flex flex-col justify-start p-6">
+                    <p class="text-blue-700 text-sm font-bold uppercase pb-2">Detective Pikachu 2</p>
+                    <p class="text-3xl font-bold hover:text-gray-700 pb-2">Detective Pikachu 2 podría ser una realidad a
+                        pesar de las malas noticias aparecidas hasta ahora</p>
+                    <p class="pb-6">La secuela se anunció oficialmente en 2019, meses antes de que Pokémon: Detective
+                        Pikachu llegara a los cines, con Oren Uziel como guionista. Sin embargo, no hubo ninguna
+                        actualización que indicara un desarrollo positivo después de eso, y la estrella Justice Smith
+                        dijo lo siguiente en una entrevista de 2021: "Creo que tenemos que enterrar nuestras esperanzas.
+                        No creo que vaya a suceder".</p>
+                    <p class="uppercase text-gray-800 hover:text-black">Seguir leyendo... <i
+                            class="fas fa-arrow-right"></i></p>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside class="w-full md:w-1/3 flex flex-col items-center px-3">
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold">About Us</p>
+                <p class="pb-2">Somos una comunidad a la que le gusta generar contenido Pokemon, por eso tu tambien
+                    puedes ayudar. Culaquiera que desee
+                    aportar su granito de arena será bienvenido. ¿Quieres saber como ayudar?
+                </p>
+                <a
+                    class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-4">
+                    Saber más
+                </a>
+            </div>
+
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">Instagram</p>
+                <div class="grid grid-cols-3 gap-3">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/viaje-al-pasado.jpg">
+                    <img class="hover:opacity-75" src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/ash.jpg">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/ash-pikachu.jpg">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/ash-campeon.jpg">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/pokemon-escarlata-purpura-iniciales.jpg">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/pokemon-las-cronicas-de-arceus.jpeg">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/amigos.jpg">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/charizard.jpg">
+                    <img class="hover:opacity-75"
+                        src="/Diego_Tejada_Orea/imagenes/img_tailwind/blog/instagram/pokemon-tour.jpg">
+                </div>
+                <a
+                    class="w-full bg-blue-800 text-white font-bold text-sm uppercase rounded hover:bg-blue-700 flex items-center justify-center px-2 py-3 mt-6">
+                    <i class="fab fa-instagram mr-2"></i> Follow @dgrzyb
+                </a>
+            </div>
+
+        </aside>
 
     </div>
 
     <!-- ======== FOOTER ======== -->
-    <footer class="bg-gray-800 text-gray-400 py-8">
-        <div class="w-full md:w-1/2 text-center md:text-left">&copy; 2023 Ejemplo. Todos los derechos reservados.
-        </div>
-        <div class="w-full md:w-1/2 text-center md:text-right">
-            <a href="#" class="hover:text-white">Términos y Condiciones</a>
-            <a href="#" class="ml-4 hover:text-white">Política de Privacidad</a>
-        </div>
+    <footer>
+        <br>
+        <p>Diego Tejada Orea | Tailwind
+        </p>
     </footer>
 
 </body>
