@@ -256,7 +256,6 @@ li a:hover:not(.active) {
 }
 
 
-
 /* ----===== seccion de imagenes =====----*/
 .inridia {
     visibility: hidden;
@@ -991,6 +990,16 @@ li a:hover:not(.active) {
 
 tbody {
     background-color: rgb(248, 247, 241);
+}
+
+/* [----===== TAILWIND FONDOS =====----] */
+
+.tailwindIndex {
+    background-image: url(/Diego_Tejada_Orea/imagenes/img_tailwind/indexIntro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
