@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>Formulario</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel="stylesheet" href="/Diego_Tejada_Orea/css/index.css">
     <link rel="stylesheet" href="bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\css\bootstrap.min.css">
@@ -17,41 +16,73 @@
 
 <body>
     <!-- ========= ENCABEZADO ========= -->
-    <div>
-        <ul>
-            <li><a href="/Diego_Tejada_Orea/index.html" class="active"><img id="logo"
-                        src="/Diego_Tejada_Orea/imagenes/logo.png" alt="logo"> </a></li>
-            <div class="dropdown1">
-                <button class="dropbtn1">CSS</button>
-                <div class="dropdown1-content">
-                    <a href="/Diego_Tejada_Orea/mapa.html">Regiones</a>
-                    <a href="/Diego_Tejada_Orea/sprites.html">Whos that pokemon!?</a>
-                    <a href="/Diego_Tejada_Orea/animacion.html">Combate</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="/Diego_Tejada_Orea/tailwind/index.html" class="navbar-brand">
+                    <img src="/Diego_Tejada_Orea/imagenes/logo.png" height="60" width="60" title="Página principal"
+                        class="img-responsive" draggable="false" alt="CoolBrand">
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <!-- ====== APARTADO CSS ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CSS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/mapa.html">Regiones</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/sprites.html">Whos that
+                                        pokemon!?</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/animacion.html">Combate</a></li>
+                            </ul>
+                        </li>
+                        <!-- ====== APARTADO bootstrap ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                BOOTSTRAP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/tablas.html">Tabla de
+                                        tipos</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/Diego_Tejada_Orea/boostrap/pokeballs.html">Pokeballs</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/lideres.html">Team
+                                        Rocket</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/boostrap/galeria.html">Juegos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ====== APARTADO framework ====== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                TAILWIND
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/tienda.html">Tienda</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ====== FORMULARIO ====== -->
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav">
+                                <a href="/Diego_Tejada_Orea/boostrap/formulario.html"
+                                    class="nav-item nav-link">FORMULARIO</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="dropdown1">
-                <button class="dropbtn1">BOOSTRAP</button>
-                <div class="dropdown1-content">
-                    <a href="/Diego_Tejada_Orea/boostrap/tablas.html">Tabla de tipos</a>
-                    <a href="/Diego_Tejada_Orea/boostrap/pokeballs.html">Pokeballs</a>
-                    <a href="/Diego_Tejada_Orea/boostrap/lideres.html">Team Rocket</a>
-                    <a href="/Diego_Tejada_Orea/boostrap/galeria.html">Juegos</a>
-                </div>
-            </div>
-            <div class="dropdown1">
-                <button class="dropbtn1">TAILWIND</button>
-                <div class="dropdown1-content">
-                    <a href="/Diego_Tejada_Orea/index.html">Tablas</a>
-                    <a href="/Diego_Tejada_Orea/sprites.html">Cards</a>
-                    <a href="/Diego_Tejada_Orea/animacion.html">Galeria</a>
-                </div>
-            </div>
-            <li><a href="/Diego_Tejada_Orea/boostrap/formulario.html">FORMULARIO</a></li>
-        </ul>
-    </div>
-    <!-- ========= BANNER ========= -->
-
-    <!-- ========= contenido ========= -->
+        </nav>
+    </header>
+    <!-- ========= Formulario ========= -->
     <div class="container">
         <h1 class="card-title text-center display-1">Formulario Pokemon</h1>
         <div class="container">

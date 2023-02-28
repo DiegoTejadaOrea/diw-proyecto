@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Blog</title>
     <!-- Importamos Tailwind CSS desde CDN -->
     <link rel="stylesheet" href="/Diego_Tejada_Orea/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
@@ -20,7 +20,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a href="/Diego_Tejada_Orea/index.html" class="navbar-brand">
+                <a href="/Diego_Tejada_Orea/tailwind/index.html" class="navbar-brand">
                     <img src="/Diego_Tejada_Orea/imagenes/logo.png" height="60" width="60" title="Página principal"
                         class="img-responsive" draggable="false" alt="CoolBrand">
                 </a>
@@ -29,10 +29,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
-                        <!-- <a href="index.html" class="nav-item nav-link">Página principal</a> -->
                         <!-- ====== APARTADO CSS ====== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 CSS
                             </a>
@@ -45,7 +44,7 @@
                         </li>
                         <!-- ====== APARTADO bootstrap ====== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 BOOTSTRAP
                             </a>
@@ -62,24 +61,30 @@
                         </li>
                         <!-- ====== APARTADO framework ====== -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 TAILWIND
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/blog.html">Blog</a></li>
                                 <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/tienda.html">Tienda</a>
-                                </li>
-                                <li><a class="dropdown-item" href="/Diego_Tejada_Orea/tailwind/blog.html">Pokeblog</a>
                                 </li>
                             </ul>
                         </li>
+                        <!-- ====== FORMULARIO ====== -->
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav">
+                                <a href="/Diego_Tejada_Orea/boostrap/formulario.html"
+                                    class="nav-item nav-link">FORMULARIO</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <!-- ======== BANNER ENCABEZADO ======== -->
-    <!-- Text Header -->
+    <!-- ENCABEZADO -->
     <header class="w-full container mx-auto">
         <div class="flex flex-col items-center py-12">
             <p class="font-bold text-gray-800 uppercase text-5xl">
@@ -90,16 +95,13 @@
             </p>
         </div>
     </header>
-
-    <!-- Topic Nav -->
-
+    <!-- NAV NOTICIAS -->
     <div
         class="w-full mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2 bg-dark">
         <a href="#pokemongo" class="rounded py-2 px-4 mx-2 text-white mt-1">Pokemon Go</a>
         <a href="#escarlata" class="rounded py-2 px-4 mx-2 text-white">Pokemon escarlata</a>
         <a href="#pikachu" class="rounded py-2 px-4 mx-2 text-white">Detective Pikachu 2</a>
     </div>
-
     <div class="container mx-auto flex flex-wrap py-6 fondobst">
 
         <!-- Posts Section -->
@@ -207,7 +209,6 @@
         </aside>
 
     </div>
-
     <!-- ======== FOOTER ======== -->
     <footer>
         <br>
