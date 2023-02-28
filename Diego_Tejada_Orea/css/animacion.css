@@ -98,7 +98,7 @@ html {
 
 /* =====FONDO===== */
 .inicio {
-    background-image: url(/Diego_Tejada_Orea/imagenes/img_intro/screen.gif) !important;
+    background-image: url("../imagenes/img_intro/screen.gif") !important;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;

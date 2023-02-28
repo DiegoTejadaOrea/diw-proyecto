@@ -107,7 +107,7 @@ body {
 }
 
 .cotenedorMap {
-    background-image: url(/Diego_Tejada_Orea/imagenes/img_css/fondo1.png);
+    background-image: url("../imagenes/img_css/fondo1.png");
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -125,45 +125,6 @@ body {
     width: 20rem;
     height: 10rem;
 }
-
-/* @media screen and (max-width: 1024px) {
-    .cartel {
-        position: absolute;
-        margin-left: -4.9rem;
-        margin-top: -24rem;
-    }
-
-    .mapaImagen {
-        margin-top: 30rem;
-        margin-left: 5rem;
-    }
-
-    .tituloRegion {
-        margin-top: 1rem;
-        margin-left: 8.3rem;
-    }
-
-    .inridia:hover::after {
-        display: none;
-    }
-
-    .inridia::after {
-        width: 100%;
-        height: 5rem;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        visibility: visible;
-        content: "¡Bienvenido a la región de Inridia!";
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 2rem;
-        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-        margin-left: 5rem;
-    }
-} */
 
 .pokemonMapa {
     transform: scale(0.9) !important;
@@ -657,8 +618,15 @@ body {
 .inputs {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 10rem;
+    margin-left: 2rem;
 }
+
+.containerInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
 
 /* --- Idioma texto --- */
@@ -693,12 +661,21 @@ input#idioma2:checked~.texto-espanol {
     text-align: center;
 }
 
+/* Tamaños banderas */
+
+.bandera{
+    width: 60px;
+    height: 55px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
 /* FIN CODIGO IDIOMAS */
 
 #blobs {
     width: 800px;
     height: 450px;
-    background: url(/Diego_Tejada_Orea/imagenes/img_css/spritePokemon1.jpg);
+    background: url("../imagenes/img_css/spritePokemon1.jpg");
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -732,7 +709,7 @@ input#idioma2:checked~.texto-espanol {
 }
 
 #blob1 a:hover {
-    background: url(/Diego_Tejada_Orea/imagenes/img_css/spritePokemon1.jpg) 0 -450px no-repeat;
+    background: url("../imagenes/img_css/spritePokemon1.jpg") 0 -450px no-repeat;
 }
 
 
@@ -740,7 +717,7 @@ input#idioma2:checked~.texto-espanol {
 /* ============= ANIMACION ============= */
 
 .animacionDiv {
-    background-image: url(/Diego_Tejada_Orea/imagenes/fondo.png);
+    background-image: url("../imagenes/fondo.png");
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
@@ -890,7 +867,7 @@ input#idioma2:checked~.texto-espanol {
     height: 18rem;
     margin-top: -24rem;
     margin-left: 11rem;
-    background: url(/Diego_Tejada_Orea/imagenes/img_css/animacionLugia.png) 0px 0px;
+    background: url(../imagenes/img_css/animacionLugia.png) 0px 0px;
     z-index: 20;
 }
 
@@ -962,7 +939,7 @@ input#idioma2:checked~.texto-espanol {
 /* [----===== BOOTSRAP FONDOS =====----] */
 
 .fondobst {
-    background-image: url(/Diego_Tejada_Orea/imagenes/fondo.png);
+    background-image: url(../imagenes/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -976,7 +953,7 @@ tbody {
 /* [----===== TAILWIND FONDOS =====----] */
 
 .tailwindIndex {
-    background-image: url(/Diego_Tejada_Orea/imagenes/img_tailwind/index/indexIntro.jpg);
+    background-image: url(../imagenes/img_tailwind/index/indexIntro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
