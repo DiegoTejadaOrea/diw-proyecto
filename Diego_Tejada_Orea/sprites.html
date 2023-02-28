@@ -9,10 +9,10 @@
     <script src="/Diego_Tejada_Orea/boostrap/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js">
 
     </script>
-    <title>Combate</title>
+    <title>Adivina el pokemon</title>
 </head>
 
-<body>
+<body class="fondobst">
     <!-- ========= ENCABEZADO ========= -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -82,22 +82,35 @@
     <div class="banner">
         <img src="imagenes/img_css/banner2.jpg" alt="Descripción de la imagen">
         <div class="banner-text">
-            <h1>¿¡Cual es este pokemon!?</h1>
-            <!-- <p>Prepatae para experimentar tu primer combate</p> -->
+            <h1 class="texto-espanol">¿¡Cual es este pokemon!?</h1>
+        </div>
+        <div class="banner-text">
+            <h1 class="texto-ingles">¿¡Who's that pokemon!?</h1>
         </div>
     </div>
     <!-- ========= CONTENIDO ========= -->
     <!-- === Sprite pokemon === -->
     <div class="sprite">
-        <br>
+        <input class="inputs" type="radio" id="idioma1" name="idioma"><label for="idioma1">Ingles</label>
+        <input class="inputs" type="radio" id="idioma2" name="idioma" checked><label for="idioma2">Español</label>
         <div class="content">
-            <p>En la serie de televicion Pokemon, todos los episodios tratan sobre una historia en la cual cada capítulo
-                muestra un pokemon en concreto, hay veces que es más de uno lo que hace confundir al expectador, por eso
-                1 o 2 veces cada capítulo hacen un corte en el que ponen la silueta del pokemon y dejan que el público
-                lo adivine. Así, puedes mostrar tus conocimientos sobre los pokemons y demostrar si ahs estado atento
-                durante la serie.</p>
+            <p class="texto-espanol">En la serie de televisión Pokemon, todos los episodios tratan sobre una historia en
+                la cual cada capítulo
+                muestra un Pokémon en concreto. Hay veces en que es más de uno lo que hace confundir al espectador, por
+                eso, una o dos veces cada capítulo hacen un corte en el que ponen la silueta del Pokémon y dejan que el
+                público lo adivine. Así, puedes mostrar tus conocimientos sobre los Pokemons y demostrar si has estado
+                atento durante la serie.</p>
         </div>
-        <h3 class="titulo2">Adivina el pokemon por su silueta</h3>
+        <div class="content">
+            <p class="texto-ingles">In the Pokemon television series, all episodes are about a story in which each
+                chapter features a
+                specific Pokémon. There are times when it is more than one that confuses the viewer, for this reason,
+                once or twice each chapter they make a cut in which they put the silhouette of the Pokémon and let the
+                public guess it. Thus, you can show your knowledge about the Pokemons and show if you have been
+                attentive during the series.</p>
+        </div>
+        <h3 class="titulo2 texto-espanol">Adivina el pokemon por su silueta</h3>
+        <h3 class="titulo2 texto-ingles">Guess the pokemon by the image</h3>
         <ul id="blobs">
             <li id="blob1"><a href="#"></a></li>
         </ul>
