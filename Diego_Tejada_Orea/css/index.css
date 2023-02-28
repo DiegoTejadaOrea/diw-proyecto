@@ -107,7 +107,7 @@ body {
 }
 
 .cotenedorMap {
-    background-image: url(/Diego_Tejada_Orea/imagenes/fondo1.png);
+    background-image: url(/Diego_Tejada_Orea/imagenes/img_css/fondo1.png);
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -976,7 +976,7 @@ tbody {
 /* [----===== TAILWIND FONDOS =====----] */
 
 .tailwindIndex {
-    background-image: url(/Diego_Tejada_Orea/imagenes/img_tailwind/indexIntro.jpg);
+    background-image: url(/Diego_Tejada_Orea/imagenes/img_tailwind/index/indexIntro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
